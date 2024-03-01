@@ -1,1 +1,199 @@
 
+Python 3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 2+2
+4
+>>> a=2
+>>> b=4
+>>> a+b
+6
+>>> texto = "Hola mundo!!"
+>>> print(texto)
+Hola mundo!!
+>>> a + texto
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    a + texto
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+>>> texto = 9
+>>> a + texto
+11
+>>> entero = 5
+>>> decimal = 5.2
+>>> imaginario 58.5j
+SyntaxError: invalid syntax
+>>> imag = 5.6j
+>>> texto = "Hola mundo"
+>>> lista = [1,2,3,4,5]
+>>> print(decimal)
+5.2
+>>> print(lista)
+[1, 2, 3, 4, 5]
+print(lista[1])
+2
+print(-1)
+-1
+print(lista[-1])
+5
+print(lista[-2])
+4
+lista[1]=0
+lista
+[1, 0, 3, 4, 5]
+lista[0]="a"
+lista
+['a', 0, 3, 4, 5]
+let(lista)
+Traceback (most recent call last):
+  File "<pyshell#25>", line 1, in <module>
+    let(lista)
+NameError: name 'let' is not defined. Did you mean: 'len'?
+len(lista)
+5
+append(lista,3)
+Traceback (most recent call last):
+  File "<pyshell#27>", line 1, in <module>
+    append(lista,3)
+NameError: name 'append' is not defined
+help
+Type help() for interactive help, or help(object) for help about object.
+help(append)
+Traceback (most recent call last):
+  File "<pyshell#29>", line 1, in <module>
+    help(append)
+NameError: name 'append' is not defined
+
+lista.append(6)
+lista
+['a', 0, 3, 4, 5, 6]
+lista.append(2:8)
+SyntaxError: invalid syntax
+lista.append(2,8)
+Traceback (most recent call last):
+  File "<pyshell#34>", line 1, in <module>
+    lista.append(2,8)
+TypeError: list.append() takes exactly one argument (2 given)
+texto
+'Hola mundo'
+let(texto)
+Traceback (most recent call last):
+  File "<pyshell#36>", line 1, in <module>
+    let(texto)
+NameError: name 'let' is not defined. Did you mean: 'len'?
+len(texto)
+10
+texto[9]
+'o'
+texto[0]
+'H'
+texto[0]="tr"
+Traceback (most recent call last):
+  File "<pyshell#40>", line 1, in <module>
+    texto[0]="tr"
+TypeError: 'str' object does not support item assignment
+testo = "hola 'mundo'"
+testo
+"hola 'mundo'"
+texto = 'hola "mundo"'
+texto
+'hola "mundo"'
+lista
+['a', 0, 3, 4, 5, 6]
+lista[1:4]
+[0, 3, 4]
+print(lista)
+['a', 0, 3, 4, 5, 6]
+lista
+['a', 0, 3, 4, 5, 6]
+list[1:3]=[]
+Traceback (most recent call last):
+  File "<pyshell#49>", line 1, in <module>
+    list[1:3]=[]
+TypeError: 'type' object does not support item assignment
+lista[1:3]=[]
+lista
+['a', 4, 5, 6]
+lista[1:3]=["a","s"]
+lista
+['a', 'a', 's', 6]
+lista_nueva = [1,2,3,4,6,75,4,0]
+lista + lista_nueva
+['a', 'a', 's', 6, 1, 2, 3, 4, 6, 75, 4, 0]
+lista
+['a', 'a', 's', 6]
+lista_nueva
+[1, 2, 3, 4, 6, 75, 4, 0]
+lista.append("hola mundo")
+lista
+['a', 'a', 's', 6, 'hola mundo']
+lista[4][0]
+'h'
+lista[4][4]
+' '
+r
+Traceback (most recent call last):
+  File "<pyshell#62>", line 1, in <module>
+    r
+NameError: name 'r' is not defined
+a
+2
+lista.append('')
+lista
+['a', 'a', 's', 6, 'hola mundo', '']
+lista[5]="curso python"
+lista
+['a', 'a', 's', 6, 'hola mundo', 'curso python']
+t="Hola 'mundo'"
+t
+"Hola 'mundo'"
+t='hola "mundo"'
+t
+'hola "mundo"'
+t="hola \n mundo"
+t
+'hola \n mundo'
+t="hola \'mundo"
+t
+"hola 'mundo"
+t="hola 'mundo"
+t
+"hola 'mundo"
+t="Arturo's"
+t
+"Arturo's"
+t='Arturo\'s "car"'
+t
+'Arturo\'s "car"'
+print(t)
+Arturo's "car"
+t='Arturo's'
+SyntaxError: unterminated string literal (detected at line 1)
+t = "Arturo's 'car' "
+t
+"Arturo's 'car' "
+print(t)
+Arturo's 'car' 
+t= "Arturo's 4" "car"
+t
+"Arturo's 4car"
+t= "Arturo's 4\" \"car \n dsdada ds"
+t
+'Arturo\'s 4" "car \n dsdada ds'
+print(t)
+Arturo's 4" "car 
+ dsdada ds
+"py" + "thon"
+'python'
+"sds "+" sdsd "+" dsdsfs"
+'sds  sdsd  dsdsfs'
+"valor1" +","+"sdsdsds"+","+"sdsdsds"
+'valor1,sdsdsds,sdsdsds'
+t='c:\nuevodato\dato'
+print(t)
+c:
+uevodato\dato
+t=r'c:\nuevo\dato'
+print(t)
+c:\nuevo\dato
+t[3:6]
+'nue'
