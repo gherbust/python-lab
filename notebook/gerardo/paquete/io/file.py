@@ -13,13 +13,17 @@ def openFile(path):
 # todo: guardado de archivos pendiente
         
 def saveFile(file_path,lista):
-    file = os.open(file_path, os.O_RDWR|os.O_CREAT)
+    try:
+        file = os.open(file_path, os.O_RDWR|os.O_CREAT)
 
-    lineas = ""
+        lineas = ""
 
-    for i in lista:
-        lineas += str(i)+"\n"
-    txt = str.encode(lineas)
-    totalBytes = os.write(file,txt)
-    os.close(file)
-    print(totalBytes)
+        for i in lista:
+            lineas += str(i)+"\n"
+        txt = str.encode(lineas)
+        totalBytes = os.write(file,txt)
+        os.close(file)
+        print(totalBytes)
+    except Exception as ex:
+       raise ex
+        
