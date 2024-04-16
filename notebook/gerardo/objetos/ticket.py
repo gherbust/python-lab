@@ -17,10 +17,9 @@ class ticket(order):
     
     def charge(self, discount,tip):
         sub_total = 0
-        for dish in range(self.add_dish):
-            
-
-
+        for dish in self.dishes:
+            sub_total += dish.price 
+        
         self.sub_total = sub_total
         self.total = self.sub_total - discount + tip + self.taxes
 
